@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Basic Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1><b>Basic Calculator</b></h1>
+    <br />
+    <br />
+    <p>
+      Until ")" of stringS appears, always push s[i] into stack, when ")"
+      appears,
+    </p>
+    <p>
+      pop stack into temp until the last index of stack is "("
+    </p>
+    <p>
+      and reverse temp and then start counting.
+    </p>
+    <p>
+      some of cases like "-1+2" or "5+(+1+2)", will additional push zero into
+      stack, like "0-1+2", "5+(0+1+2).s
+    </p>
+    <br />
+    <br />
+    <input type="text" id="intervalsInput" placeholder="Enter s = 2-1 + 2 " />
+    <br />
+    <br />
+    <button id="submit">Submit</button>
+    <br />
+    <br />
+    <div id="output"></div>
+    <script src="script.js"></script>
+  </body>
+</html>
