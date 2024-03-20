@@ -42,3 +42,18 @@ document.getElementById("submit").addEventListener("click", function() {
   const result = calculate(input);
   document.getElementById("output").innerText = "Output: " + result;
 });
+
+document
+  .getElementById("intervalsInput")
+  .addEventListener("keypress", function(event) {
+    if (event.key === "Enter") {
+      event.preventDefault();
+      handleExpressionCalculation();
+    }
+  });
+
+function handleExpressionCalculation() {
+  const input = document.getElementById("intervalsInput").value;
+  const result = calculate(input);
+  document.getElementById("output").innerText = "Output: " + result;
+}
